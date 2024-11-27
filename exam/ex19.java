@@ -37,6 +37,6 @@ public class ex19{
         
         System.out.println("arr1 = " + Arrays.toString(arr1));
         System.out.println("arr2 = " + Arrays.toString(arr2));
-        System.out.println(result.toString());
+        // System.out.println(result.toString());
     }
 }
