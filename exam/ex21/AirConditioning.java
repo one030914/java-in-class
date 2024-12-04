@@ -78,6 +78,9 @@ public class AirConditioning{
                     env = scanner.nextInt();
                     AC.changeEnv(env);
                     break;
+                default:
+                    System.out.println("Invalid command.");
+                    continue;
             }
             System.out.println("Updated" + AC.toString());
         }
