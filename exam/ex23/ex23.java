@@ -24,14 +24,17 @@ public class ex23{
 }
 
 class Animal{
-    String name = "";
-    int age = 0;
+    private String name = "";
+    private int age = 0;
     public Animal(String name, int age){
         this.name = name;
         this.age = age;
     }
     public void AnimalInfo(){
-        System.out.printf("Animal: %s, Age: %d\n", this.name, this.age);
+        System.out.printf("Animal: %s, Age: %d\n", getName(), getAge());
+    }
+    public String getName(){
+        return this.name;
     }
     public int getAge(){
         return this.age;
@@ -46,7 +49,7 @@ class Chicken extends Animal{
     }
     @Override
     public void AnimalInfo(){
-        System.out.printf("Chicken: %s, Age: %d, foots: %d\n", this.name, this.age, this.foots);
+        System.out.printf("Chicken: %s, Age: %d, foots: %d\n", getName(), getAge(), getFoots());
     }
     public int getFoots(){
         return this.foots;
@@ -61,7 +64,7 @@ class Rabbit extends Animal{
     }
     @Override
     public void AnimalInfo(){
-        System.out.printf("Rabbit: %s, Age: %d, foots: %d\n", this.name, this.age, this.foots);
+        System.out.printf("Rabbit: %s, Age: %d, foots: %d\n", getName(), getAge(), getFoots());
     }
     public int getFoots(){
         return this.foots;
@@ -76,7 +79,7 @@ class Dog extends Animal{
     }
     @Override
     public void AnimalInfo(){
-        System.out.printf("Dog: %s, Age: %d, foots: %d\n", this.name, this.age, this.foots);
+        System.out.printf("Dog: %s, Age: %d, foots: %d\n", getName(), getAge(), getFoots());
     }
     public int getFoots(){
         return this.foots;

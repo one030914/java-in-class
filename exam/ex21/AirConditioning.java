@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class AirConditioning{
-    enum Mode{
+    private enum Mode{
         SHUTDOWN, DEHUMIDIFICATION, REFRIGERATION
     }
     private Mode mode;
@@ -63,8 +63,7 @@ public class AirConditioning{
         System.out.println("Initial" + AC.toString() + "\n");
 
         while(scanner.hasNext()){
-            String cmd = scanner.next();
-            cmd.toLowerCase();
+            String cmd = scanner.next().toLowerCase();
             switch (cmd){
                 case "chmod":
                     input = scanner.next();

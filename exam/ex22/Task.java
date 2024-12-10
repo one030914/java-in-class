@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Task{
-    enum State{
+    private enum State{
         UNFINISHED, PROCESSING, COMPLETED
     }
     private State state;
@@ -27,7 +27,7 @@ public class Task{
         int priority = 0, index = 0;
 
         while(scanner.hasNext()){
-            cmd = scanner.next();
+            cmd = scanner.next().toLowerCase();
             switch (cmd){
                 case "append":
                     name = scanner.next();
