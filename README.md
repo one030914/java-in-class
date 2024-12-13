@@ -1,6 +1,6 @@
 # java-in-class
 
-upload the homework to cloud, needs to connect the VPN to school.
+upload the homework to the cloud, it needs to connect the VPN to the school.
 
 then use ftp connect to upload@120.105.128.113
 
